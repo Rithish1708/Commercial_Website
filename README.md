@@ -1273,12 +1273,11 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 ```
 
 ## OUTPUT
-![alt text](<../Screenshot (151).png>)
-![alt text](<../Screenshot (152).png>)
-![alt text](<../Screenshot (153).png>)
-![alt text](<../Screenshot (154).png>)
-![alt text](<../Screenshot (155).png>)
-
+![alt text](<Screenshot (151).png>)
+![alt text](<Screenshot (152).png>)
+![alt text](<Screenshot (153).png>)
+![alt text](<Screenshot (154).png>)
+![alt text](<Screenshot (155).png>)
 
 ## RESULT
 The program for creating commercial website using CSS Flexbox is executed successfully.

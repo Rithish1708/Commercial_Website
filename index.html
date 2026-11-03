@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity | Sports Bike Showroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">VELO<span>CITY</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#models">Models</a>
+            <a href="#performance">Performance</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-btn">Book a Ride</a>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">BUILT FOR SPEED. DESIGNED FOR YOU.</p>
+
+            <h1 id="hero-name">
+                THE ART OF <span>SPEED</span>
+            </h1>
+
+            <p id="hero-description">
+                Experience pure adrenaline with our next-generation
+                sports motorcycles. Power, style and performance
+                come together in one machine.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#models" class="primary-btn">Explore Bikes</a>
+                <a href="#performance" class="secondary-btn">Discover More</a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h2 id="hero-power">42 HP</h2>
+                    <p>MAX POWER</p>
+                </div>
+
+                <div>
+                    <h2 id="hero-speed">180 KM/H</h2>
+                    <p>TOP SPEED</p>
+                </div>
+
+                <div>
+                    <h2 id="hero-engine">399 CC</h2>
+                    <p>ENGINE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                id="main-bike"
+                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1200"
+                alt="Sports Motorcycle">
+        </div>
+
+    </section>
+
+
+    <!-- BIKE MODEL SELECTOR -->
+    <section class="model-section" id="models">
+
+        <div class="section-heading">
+            <p>FIND YOUR MACHINE</p>
+            <h2>CHOOSE YOUR <span>RIDE</span></h2>
+            <p>Select your favourite motorcycle model.</p>
+        </div>
+
+        <div class="model-selector">
+
+            <button class="model-btn active" onclick="changeBike(0)">
+                VELOCITY R1
+            </button>
+
+            <button class="model-btn" onclick="changeBike(1)">
+                VELOCITY X2
+            </button>
+
+            <button class="model-btn" onclick="changeBike(2)">
+                VELOCITY PRO
+            </button>
+
+        </div>
+
+        <div class="selected-bike">
+
+            <div class="selected-image">
+                <img id="model-image"
+                     src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1000"
+                     alt="Selected bike">
+            </div>
+
+            <div class="selected-details">
+
+                <p class="tagline">MEET YOUR NEXT MACHINE</p>
+
+                <h2 id="model-name">VELOCITY R1</h2>
+
+                <p id="model-info">
+                    A perfect combination of aggressive styling,
+                    powerful performance and everyday comfort.
+                </p>
+
+                <div class="spec-grid">
+
+                    <div class="spec">
+                        <span>ENGINE</span>
+                        <h3 id="model-engine">399 CC</h3>
+                    </div>
+
+                    <div class="spec">
+                        <span>POWER</span>
+                        <h3 id="model-power">42 HP</h3>
+                    </div>
+
+                    <div class="spec">
+                        <span>TOP SPEED</span>
+                        <h3 id="model-speed">180 KM/H</h3>
+                    </div>
+
+                    <div class="spec">
+                        <span>PRICE</span>
+                        <h3 id="model-price">₹2.80 L</h3>
+                    </div>
+
+                </div>
+
+                <a href="#contact" class="primary-btn">Enquire Now</a>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- PERFORMANCE SECTION -->
+    <section class="performance" id="performance">
+
+        <div class="performance-heading">
+            <p>ENGINEERED TO PERFORM</p>
+            <h2>MORE THAN JUST <span>A BIKE</span></h2>
+            <p>
+                Every detail is designed to deliver an exciting
+                riding experience.
+            </p>
+        </div>
+
+        <div class="performance-container">
+
+            <div class="performance-card">
+                <div class="icon">⚡</div>
+                <h3>Powerful Engine</h3>
+                <p>
+                    Experience responsive acceleration and
+                    powerful engine performance.
+                </p>
+            </div>
+
+            <div class="performance-card">
+                <div class="icon">🏁</div>
+                <h3>Racing Design</h3>
+                <p>
+                    Aerodynamic body design inspired by
+                    professional racing motorcycles.
+                </p>
+            </div>
+
+            <div class="performance-card">
+                <div class="icon">🛞</div>
+                <h3>Advanced Handling</h3>
+                <p>
+                    Designed for stability, control and
+                    confidence on every ride.
+                </p>
+            </div>
+
+            <div class="performance-card">
+                <div class="icon">🛡️</div>
+                <h3>Safety Features</h3>
+                <p>
+                    Modern braking and safety technology
+                    for a controlled riding experience.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTION SECTION -->
+    <section class="collection">
+
+        <div class="section-heading">
+            <p>EXPLORE OUR COLLECTION</p>
+            <h2>BUILT TO <span>STAND OUT</span></h2>
+        </div>
+
+        <div class="collection-container">
+
+            <div class="collection-card">
+                <img
+                src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700"
+                alt="Sports motorcycle">
+
+                <div class="collection-info">
+                    <p>SPORT SERIES</p>
+                    <h3>Racing Edition</h3>
+                    <a href="#models" onclick="changeBike(0)">Explore Model →</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <img
+                src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=700"
+                alt="Motorcycle">
+
+                <div class="collection-info">
+                    <p>STREET SERIES</p>
+                    <h3>Street Fighter</h3>
+                    <a href="#models" onclick="changeBike(1)">Explore Model →</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <img
+                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700"
+                alt="Superbike">
+
+                <div class="collection-info">
+                    <p>PREMIUM SERIES</p>
+                    <h3>Performance Pro</h3>
+                    <a href="#models" onclick="changeBike(2)">Explore Model →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img
+            src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1000"
+            alt="Motorcycle showroom">
+        </div>
+
+        <div class="about-content">
+            <p class="tagline">OUR STORY</p>
+
+            <h2>PASSION FOR <span>PERFORMANCE</span></h2>
+
+            <p>
+                Welcome to Velocity, a sports motorcycle showroom
+                created for people who love speed, design and
+                innovation.
+            </p>
+
+            <p>
+                We bring together exciting motorcycle designs,
+                advanced technology and a passion for riding.
+                Our goal is to help every customer discover
+                the perfect machine.
+            </p>
+
+            <a href="#contact" class="primary-btn">Know More</a>
+        </div>
+
+    </section>
+
+
+    <!-- CUSTOMER REVIEWS -->
+    <section class="reviews">
+
+        <div class="section-heading">
+            <p>RIDER EXPERIENCES</p>
+            <h2>WHAT RIDERS <span>SAY</span></h2>
+        </div>
+
+        <div class="review-container">
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Amazing bike design and a great showroom
+                    experience. The team was very helpful."
+                </p>
+                <h3>Arun Kumar</h3>
+                <span>Sports Bike Owner</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "I love the aggressive styling and premium
+                    appearance. Excellent experience."
+                </p>
+                <h3>Vijay Raj</h3>
+                <span>Sports Bike Owner</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The model selection and customer support
+                    made my buying experience easy."
+                </p>
+                <h3>Karthik S</h3>
+                <span>Sports Bike Owner</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+
+        <div class="contact-content">
+            <p class="tagline">YOUR NEXT RIDE STARTS HERE</p>
+
+            <h2>READY TO <span>RIDE?</span></h2>
+
+            <p>
+                Contact our showroom and book your favourite
+                sports bike today.
+            </p>
+        </div>
+
+        <form id="contact-form">
+
+            <input type="text" id="customer-name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="customer-email"
+                   placeholder="Your Email" required>
+
+            <input type="tel" id="customer-phone"
+                   placeholder="Phone Number" required>
+
+            <select id="customer-bike">
+                <option value="Velocity R1">Velocity R1</option>
+                <option value="Velocity X2">Velocity X2</option>
+                <option value="Velocity Pro">Velocity Pro</option>
+            </select>
+
+            <textarea id="customer-message"
+                      placeholder="Your Message"></textarea>
+
+            <button type="submit" class="primary-btn">
+                Submit Enquiry
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+                <h2 class="logo">VELO<span>CITY</span></h2>
+                <p>Feel the speed. Experience the freedom.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#models">Models</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div>
+                <h3>Contact Details</h3>
+                <p>Email: info@velocity.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Tamil Nadu, India</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 Velocity Sports Bikes. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
